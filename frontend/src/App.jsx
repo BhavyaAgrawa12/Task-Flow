@@ -63,8 +63,20 @@ function App() {
             position="bottom-center"
             containerClassName="!bottom-20 lg:!bottom-6"
             toastOptions={{
-              className: 'glass !text-text text-sm !shadow-elevated',
+              className: 'taskflow-toast',
               duration: 4000,
+              success: {
+                iconTheme: {
+                  primary: '#22c55e',
+                  secondary: '#ffffff',
+                },
+              },
+              error: {
+                iconTheme: {
+                  primary: '#ef4444',
+                  secondary: '#ffffff',
+                },
+              },
             }}
           />
         </BrowserRouter>
