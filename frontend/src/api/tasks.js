@@ -2,7 +2,11 @@ import { api } from './axios'
 import { normalizeEstimatedEffort } from '../utils/effort'
 
 function normalizeTask(task) {
-  const boardId = typeof task.board === 'object' ? task.board._id || task.board.id : task.board
+  const boardId =
+  task.board?._id ||
+  task.board?.id ||
+  task.board ||
+  null
   return {
     id: task._id || task.id,
     title: task.title,
