@@ -513,7 +513,6 @@ VITE_API_URL=https://taskflow-api-jak6.onrender.com
 **Bhavya Agrawal**
 
 * GitHub: https://github.com/BhavyaAgrawa12
-* Repository: https://github.com/BhavyaAgrawa12/Task-Flow
 
 ---
 
