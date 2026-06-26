@@ -1,13 +1,17 @@
 import { Link } from 'react-router-dom'
-import { CheckSquare } from 'lucide-react'
 import { cn } from '../../utils/formatters'
 
-function Logo({ className = '', compact = false }) {
+function Logo({ className = '', compact = false, iconSize = 'md' }) {
+  const sizeClass =
+    iconSize === 'lg' ? 'h-11 w-11' : iconSize === 'sm' ? 'h-8 w-8' : 'h-9 w-9'
+
   return (
     <Link to="/" className={cn('group flex items-center gap-2.5', className)}>
-      <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-xl bg-white/10 ring-1 ring-white/10 transition-all group-hover:bg-white/15">
-        <CheckSquare className="h-5 w-5 text-white" strokeWidth={2.5} />
-      </div>
+      <img
+        src="/logo.png"
+        alt="TaskFlow"
+        className={cn('shrink-0 object-contain transition-transform group-hover:scale-105', sizeClass)}
+      />
       <span
         className={cn(
           'text-lg font-semibold tracking-tight text-text',
