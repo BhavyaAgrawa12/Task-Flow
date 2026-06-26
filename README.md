@@ -80,16 +80,14 @@ The application follows modern SaaS design principles with a responsive interfac
 
 ## 🤖 AI Task Suggestions
 
-Powered by **Google Gemini AI**
+TaskFlow integrates with **Google Gemini AI** to help users estimate task effort and suggest realistic deadlines.
 
-Generate:
+**Features:**
+- AI-powered effort estimation
+- Suggested task deadlines
+- AI reasoning for recommendations
 
-* Estimated Effort
-* Suggested Deadline
-* AI Reasoning
-
-directly while creating tasks.
-
+> **Note:** The live demo uses the Google Gemini AI Free Tier. AI suggestions may be temporarily unavailable if the free API quota has been exhausted.
 ---
 
 ## 📊 Analytics Dashboard
