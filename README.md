@@ -262,25 +262,6 @@ Manage Tasks on Kanban Board
     ▼
 Track Progress in Analytics Dashboard
 ```
-
----
-
-# 📸 Screenshots
-
-> Add screenshots after cloning or deploying the project.
-
-| Landing Page | Dashboard  |
-| ------------ | ---------- |
-| Screenshot   | Screenshot |
-
-| Kanban Board | Analytics  |
-| ------------ | ---------- |
-| Screenshot   | Screenshot |
-
-| Create Task | AI Suggestions |
-| ----------- | -------------- |
-| Screenshot  | Screenshot     |
-
 ---
 
 # 💡 Demo Note
