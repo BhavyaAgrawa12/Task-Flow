@@ -1,5 +1,6 @@
 import { Link, useLocation } from 'react-router-dom'
 import {
+  Home,
   LayoutDashboard,
   Kanban,
   ListTodo,
@@ -9,11 +10,13 @@ import {
 import { cn } from '../../utils/formatters'
 
 const navItems = [
+  
   { label: 'Dashboard', href: '/dashboard', icon: LayoutDashboard },
   { label: 'Boards', href: '/boards', icon: Kanban },
   { label: 'Tasks', href: '/tasks', icon: ListTodo },
   { label: 'Analytics', href: '/analytics', icon: BarChart3 },
   { label: 'Profile', href: '/profile', icon: User },
+  { label: "Home", href: "/", icon: Home }
 ]
 
 function MobileBottomNav() {
@@ -25,10 +28,10 @@ function MobileBottomNav() {
       style={{ paddingBottom: 'env(safe-area-inset-bottom, 0px)' }}
       aria-label="Mobile navigation"
     >
-      <div className="mx-auto flex max-w-lg items-stretch justify-around px-1 py-1.5 sm:max-w-none sm:px-4">
+      <div className="mx-auto flex max-w-lg items-stretch justify-around px-1 py-2.5 sm:max-w-none sm:px-4">
         {navItems.map(({ label, href, icon: Icon }) => {
           const active =
-            pathname === href || (href !== '/dashboard' && pathname.startsWith(href))
+  pathname === href || pathname.startsWith(`${href}/`);
 
           return (
             <Link
