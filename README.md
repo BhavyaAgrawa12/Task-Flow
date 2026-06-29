@@ -111,6 +111,183 @@ Designed for
 
 ---
 
+# 📖 How to Use TaskFlow
+
+Follow these steps to explore the complete workflow of the application.
+
+---
+
+## 1️⃣ Register
+
+Open the application and create a new account using your:
+
+* Name
+* Email
+* Password
+
+If you already have an account, simply log in.
+
+---
+
+## 2️⃣ Login
+
+After logging in successfully, you'll be redirected to your dashboard where all your project boards are displayed.
+
+---
+
+## 3️⃣ Create a Board
+
+Boards represent individual projects.
+
+Examples:
+
+* College Project
+* Personal Tasks
+* Office Work
+* Freelance Project
+
+Click **Create Board**, enter a project name, and save it.
+
+---
+
+## 4️⃣ Open the Board
+
+Click on the newly created board.
+
+This opens the Kanban workspace where all tasks for that project will be managed.
+
+---
+
+## 5️⃣ Create a Task
+
+Click **Create Task** and fill in the following information:
+
+* Task Title
+* Task Description
+* Priority (Low / Medium / High)
+* Due Date (Optional)
+
+---
+
+## 6️⃣ Generate AI Suggestions
+
+Click **Suggest Estimate**.
+
+TaskFlow sends the task information to **Google Gemini AI**, which analyzes the task and returns:
+
+* 📅 Suggested Deadline
+* ⏱ Estimated Effort
+* 💡 AI Reasoning
+
+You can then:
+
+* ✅ Accept the AI suggestion
+* ❌ Decline it and keep your own values
+
+> **Note:** AI Suggestions use the Google Gemini AI Free Tier. If the daily quota has been exhausted, this feature may be temporarily unavailable. The rest of the application continues to work normally.
+
+---
+
+## 7️⃣ Save the Task
+
+Click **Create Task**.
+
+The task will immediately appear inside your Kanban board.
+
+---
+
+## 8️⃣ Manage Your Workflow
+
+Organize tasks by moving them across the Kanban columns:
+
+* 📝 Todo
+* 🚧 In Progress
+* ✅ Done
+
+This helps visualize project progress and improve productivity.
+
+---
+
+## 9️⃣ View Analytics
+
+Navigate to the **Analytics Dashboard** to monitor:
+
+* Total Tasks
+* Completed Tasks
+* Pending Tasks
+* Overdue Tasks
+* Productivity Overview
+* Task Status Distribution
+
+---
+
+## 🔟 Logout Securely
+
+Use the Profile menu to securely log out of your account when finished.
+
+---
+
+# ⚡ Quick Demo Flow
+
+```text
+Register
+    │
+    ▼
+Login
+    │
+    ▼
+Create Board
+    │
+    ▼
+Open Board
+    │
+    ▼
+Create Task
+    │
+    ▼
+Fill Task Details
+    │
+    ▼
+Suggest Estimate (AI)
+    │
+    ▼
+Accept / Decline AI Suggestion
+    │
+    ▼
+Save Task
+    │
+    ▼
+Manage Tasks on Kanban Board
+    │
+    ▼
+Track Progress in Analytics Dashboard
+```
+---
+
+# 💡 Demo Note
+
+This project uses the **Google Gemini AI Free Tier** for AI-powered task suggestions.
+
+Since the live demo relies on the free API quota, AI suggestions may occasionally become unavailable if the quota has been exhausted.
+
+All other features—including authentication, board management, task management, and analytics—remain fully functional.
+
+---
+
+## ⭐ Recommended Workflow
+
+1. Register or Login.
+2. Create your first board.
+3. Open the board.
+4. Add a task.
+5. Click **Suggest Estimate** to receive AI recommendations.
+6. Accept or decline the suggestion.
+7. Save the task.
+8. Move tasks between **Todo**, **In Progress**, and **Done**.
+9. Visit the **Analytics Dashboard** to monitor project progress.
+
+---
+
 # 🛠 Tech Stack
 
 ### Frontend
@@ -336,7 +513,6 @@ VITE_API_URL=https://taskflow-api-jak6.onrender.com
 **Bhavya Agrawal**
 
 * GitHub: https://github.com/BhavyaAgrawa12
-* Repository: https://github.com/BhavyaAgrawa12/Task-Flow
 
 ---
 
