@@ -6,7 +6,7 @@ function Logo({ className = '', compact = false, iconSize = 'md' }) {
     iconSize === 'lg' ? 'h-11 w-11' : iconSize === 'sm' ? 'h-8 w-8' : 'h-9 w-9'
 
   return (
-    <Link to="/" className={cn('group flex items-center gap-2.5', className)}>
+    <Link to="/dashboard" className={cn('group flex items-center gap-2.5', className)}>
       <img
         src="/logo.png"
         alt="TaskFlow"
